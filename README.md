@@ -1,3 +1,3 @@
-# Namer
+# Helloer
 
-An example provider for demonstrating contract testing with Pact.
+An example consumer for demonstrating contract testing with Pact.
