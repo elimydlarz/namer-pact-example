@@ -4,3 +4,7 @@
 
 # OSX nonsense
 .DS_Store
+
+# Namer nonsense
+log
+reports
