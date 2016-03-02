@@ -3,8 +3,7 @@ Pact.provider_states_for 'Helloer' do
     no_op
 
     # set_up do
-      # Create a thing here using your framework of choice
-      # eg. Sequel.sqlite[:somethings].insert(name: "A small something")
+      # You could mock external dependencies here, like a database or another provider service.
     # end
   end
 end
