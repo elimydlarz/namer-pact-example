@@ -1,3 +1,4 @@
-require 'dotenv'
-Dotenv.load
 require 'pact/tasks'
+require 'dotenv'
+
+Dotenv.load

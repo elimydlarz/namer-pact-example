@@ -1,5 +1,5 @@
 require 'pact/provider/rspec'
-require_relative 'helloer'
+require './spec/service_consumers/helloer'
 
 Pact.service_provider 'Namer' do
   honours_pact_with 'Helloer' do

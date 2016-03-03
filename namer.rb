@@ -1,7 +1,7 @@
 require 'dotenv'
-Dotenv.load
-
 require 'sinatra'
+
+Dotenv.load
 
 get '/' do
   'world'
