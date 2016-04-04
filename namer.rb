@@ -1,8 +1,13 @@
 require 'dotenv'
 require 'sinatra'
+require 'sinatra/json'
 
 Dotenv.load
 
 get '/' do
-  'world'
+  json(
+    {
+      name: 'world'
+    }
+  )
 end

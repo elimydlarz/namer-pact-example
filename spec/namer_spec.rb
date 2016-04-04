@@ -1,10 +1,13 @@
 require 'spec_helper'
 
 describe 'Namer'  do
-  describe 'landing page' do
-    subject { get '/' }
+  describe 'root' do
+    before { get '/' }
 
-    its(:status) { is_expected.to eq 200 }
-    its(:body) { is_expected.to eq 'world' }
+    it 'includes name' do
+      parsed_response = JSON.parse(last_response.body, symbolize_names: true)
+
+      expect(parsed_response).to eq({ name: 'world' })
+    end
   end
 end
